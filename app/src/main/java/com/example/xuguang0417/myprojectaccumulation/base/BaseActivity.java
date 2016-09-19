@@ -16,7 +16,7 @@ import butterknife.ButterKnife;
 import butterknife.Unbinder;
 
 /**
- * Created by xuguang on 16/7/5.
+ * Created by xuguang
  * activity 基类
  */
 public abstract class BaseActivity extends AppCompatActivity {

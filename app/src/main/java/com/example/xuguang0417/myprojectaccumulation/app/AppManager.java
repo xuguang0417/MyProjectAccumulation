@@ -7,10 +7,6 @@ import java.util.Stack;
 
 /**
  * activity堆栈式管理
- * 
- * @author Mingming
- * @created 2016年4月25日 下午6:22:05
- * 
  */
 public class AppManager {
 
