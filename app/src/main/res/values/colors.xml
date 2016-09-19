@@ -3,4 +3,24 @@
     <color name="colorPrimary">#3F51B5</color>
     <color name="colorPrimaryDark">#303F9F</color>
     <color name="colorAccent">#FF4081</color>
+
+    <color name="toolbar_color">#ff9800</color>
+
+    <!-- 白色-->
+    <color name="white">#ffffff</color>
+
+    <color name="black">#000000</color>
+
+    <!-- 分割线-->
+    <color name="divider">#e6e6e6</color>
+
+    <!-- 按键颜色-->
+    <color name="btn_common_normal">#ff9800</color>
+
+    <!-- 键按下颜色-->
+    <color name="btn_common_abnormal">#ec8d01</color>
+
+    <!-- 背景区别-->
+    <color name="bg_color_1">#ffeeeeee</color>
+    <color name="bg_color_2">#ffffffff</color>
 </resources>
