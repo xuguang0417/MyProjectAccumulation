@@ -8,6 +8,7 @@
 
 ******
 
-##联系人列表和吸顶效果
-####[ItemDecoration实现的粘性头部](https://github.com/oubowu/PinnedSectionItemDecoration)
-####[Android RecyclerView 顶部悬浮实现](http://www.jianshu.com/p/c596f2e6f587#)
+##一.联系人列表和吸顶效果(粘性头部)
+
+* [ItemDecoration实现的粘性头部](https://github.com/oubowu/PinnedSectionItemDecoration)
+* [Android RecyclerView 顶部悬浮实现](http://www.jianshu.com/p/c596f2e6f587#)
