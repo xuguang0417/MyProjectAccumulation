@@ -112,16 +112,16 @@ public class CeilingActivity extends BaseActivity {
         for (int index = 0; index < 40; index++) {
             if (index < 5) {
                 stickyExampleModels.add(new StickyModel(
-                        "吸顶文本1", "name" + index, "gender" + index, "profession" + index));
+                        "1班学生", "姓名" + index, "性别" + index, "职业" + index));
             } else if (index < 15) {
                 stickyExampleModels.add(new StickyModel(
-                        "吸顶文本2", "name" + index, "gender" + index, "profession" + index));
+                        "2班学生", "姓名" + index, "性别" + index, "职业" + index));
             } else if (index < 25) {
                 stickyExampleModels.add(new StickyModel(
-                        "吸顶文本3", "name" + index, "gender" + index, "profession" + index));
+                        "3班学生", "姓名" + index, "性别" + index, "职业" + index));
             } else {
                 stickyExampleModels.add(new StickyModel(
-                        "吸顶文本4", "name" + index, "gender" + index, "profession" + index));
+                        "4班学生", "姓名" + index, "性别" + index, "职业" + index));
             }
         }
 
