@@ -12,3 +12,4 @@
 
 * [ItemDecoration实现的粘性头部](https://github.com/oubowu/PinnedSectionItemDecoration)
 * [Android RecyclerView 顶部悬浮实现](http://www.jianshu.com/p/c596f2e6f587#)
+* [通过RecyclerView实现的联系人](https://github.com/jiang111/IndexRecyclerView)
