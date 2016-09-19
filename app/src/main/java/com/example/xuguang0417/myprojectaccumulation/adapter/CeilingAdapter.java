@@ -35,6 +35,18 @@ public class CeilingAdapter extends RecyclerView.Adapter {
         this.stickyModelList = stickyModelList;
     }
 
+    public interface OnItemClickListener {
+        void onItemClick(View view, int position);
+
+        void OnStickyItemClick(View view, int position);
+    }
+
+    private OnItemClickListener onItemClickListener;
+
+    public void setOnItemClickListener(OnItemClickListener onItemClickListener) {
+        this.onItemClickListener = onItemClickListener;
+    }
+
     @Override
     public RecyclerView.ViewHolder onCreateViewHolder(ViewGroup parent, int viewType) {
         View view = LayoutInflater.from(context).inflate(R.layout.item_list, parent, false);
@@ -42,9 +54,9 @@ public class CeilingAdapter extends RecyclerView.Adapter {
     }
 
     @Override
-    public void onBindViewHolder(RecyclerView.ViewHolder holder, int position) {
+    public void onBindViewHolder(final RecyclerView.ViewHolder holder, final int position) {
         if (holder instanceof ItemViewHolder) {
-            ItemViewHolder itemViewHolder = (ItemViewHolder) holder;
+            final ItemViewHolder itemViewHolder = (ItemViewHolder) holder;
 
             //改变背景颜色  以作区分
             if (position % 2 == 0) {
@@ -78,6 +90,20 @@ public class CeilingAdapter extends RecyclerView.Adapter {
             }
             // ContentDescription 用来记录并获取要吸顶展示的信息
             itemViewHolder.itemView.setContentDescription(stickyModelList.get(position).getSticky());
+
+            itemViewHolder.textStickyHeader.setOnClickListener(new View.OnClickListener() {
+                @Override
+                public void onClick(View view) {
+                    onItemClickListener.OnStickyItemClick(view, position);
+                }
+            });
+
+            itemViewHolder.realContentWrapper.setOnClickListener(new View.OnClickListener() {
+                @Override
+                public void onClick(View view) {
+                    onItemClickListener.onItemClick(view, position);
+                }
+            });
         }
     }
 

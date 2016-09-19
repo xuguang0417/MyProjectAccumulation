@@ -4,6 +4,7 @@ import android.support.v7.widget.LinearLayoutManager;
 import android.support.v7.widget.RecyclerView;
 import android.view.View;
 import android.widget.TextView;
+import android.widget.Toast;
 
 import com.example.xuguang0417.myprojectaccumulation.R;
 import com.example.xuguang0417.myprojectaccumulation.adapter.CeilingAdapter;
@@ -96,6 +97,18 @@ public class CeilingActivity extends BaseActivity {
                         textStickyHeader.setTranslationY(0);
                     }
                 }
+            }
+        });
+
+        adapter.setOnItemClickListener(new CeilingAdapter.OnItemClickListener() {
+            @Override
+            public void onItemClick(View view, int position) {
+                Toast.makeText(CeilingActivity.this, "第" + position + "个item", Toast.LENGTH_SHORT).show();
+            }
+
+            @Override
+            public void OnStickyItemClick(View view, int position) {
+                Toast.makeText(CeilingActivity.this, "第" + position + "个头部", Toast.LENGTH_SHORT).show();
             }
         });
     }
